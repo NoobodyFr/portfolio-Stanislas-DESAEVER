@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Stanislas Desaever | BTS SIO SISR</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
+        header { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 12px; margin-bottom: 30px; border: 1px solid #334155; }
+        header h1 { font-size: 2.5rem; color: #60a5fa; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: var(--text-muted); }
+        .container { max-width: 900px; margin: 0 auto; }
+        section { background: var(--card-bg); padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border: 1px solid #334155; }
+        h2 { color: #60a5fa; margin-bottom: 15px; border-bottom: 2px solid #334155; padding-bottom: 8px; font-size: 1.5rem; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+        li::before { content: "▪"; color: var(--primary); position: absolute; left: 0; }
+        .badge { display: inline-block; background: #2563eb; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.85rem; margin-right: 5px; margin-bottom: 5px; }
+        footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <h1>Stanislas Desaever</h1>
+            <p>Étudiant en BTS SIO option SISR | Infrastructure, Réseaux & Cybersécurité</p>
+            <div style="margin-top: 15px;">
+                <span class="badge">Réseaux</span>
+                <span class="badge">Systèmes</span>
+                <span class="badge">Support IT</span>
+            </div>
+        </header>
+
+        <!-- Présentation -->
+        <section>
+            <h2>À propos de moi</h2>
+            <p>Titulaire d'un Bac Pro SN option RISC, je prépare actuellement mon BTS SIO option SISR. Passionné par l'infrastructure, le hardware et la sécurité des réseaux, je cherche à évoluer vers les métiers d'administrateur systèmes et réseaux.</p>
+        </section>
+
+        <!-- Projet -->
+        <section>
+            <h2>Mon Projet Technique</h2>
+            <p><strong>Jeu Python / Pygame sur Raspberry Pi 5 :</strong></p>
+            <ul>
+                <li><strong>Démarche :</strong> Après l'abandon d'une piste N64, conception d'un jeu sous Python testé sur Raspberry Pi 5.</li>
+                <li><strong>Mon Rôle :</strong> Création de la map et intégration des graphismes (sprites).</li>
+                <li><strong>Bilan :</strong> Analyse des contraintes de performance (lags de Pygame sur ARM) et mise en avant de la faible consommation énergétique du matériel.</li>
+            </ul>
+        </section>
+
+        <!-- Stage -->
+        <section>
+            <h2>Expérience Professionnelle (Stage)</h2>
+            <p><strong>Service IT TechLobby - EY (La Défense) :</strong></p>
+            <ul>
+                <li>Préparation et masterisation de postes informatiques (Windows et Mac).</li>
+                <li>Mise en place de clés USB bootables, paramétrage BIOS et chiffrement BitLocker.</li>
+                <li>Gestion de la flotte mobile (IMEI) et utilisation d'outils de certification (CertEurope).</li>
+            </ul>
+        </section>
+
+        <!-- Veilles -->
+        <section>
+            <h2>Mes Veilles (E4)</h2>
+            <p><strong>1. Veille Technologique : Latence LAN dans l'Esport</strong></p>
+            <ul>
+                <li>Objectif : Zéro délai et zéro variation de ping (jitter).</li>
+                <li>Technologies : Switches Cut-Through, QoS sur protocole UDP, et Bypass Kernel (DPDK).</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>2. Veille Cybersécurité : VPN Ancienne vs Nouvelle Génération</strong></p>
+            <ul>
+                <li>Évolution : Abandon des VPN lourds (OpenVPN) au profit de solutions légères et sécurisées.</li>
+                <li>Technologies : WireGuard (code ultra-léger), chiffrement ChaCha20, et architecture ZTNA (Zero Trust).</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 - Stanislas Desaever | Portfolio BTS SIO SISR</p>
+        </footer>
+    </div>
+
+</body>
+</html>
